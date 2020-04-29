@@ -1,0 +1,19 @@
+{
+  "name": "diplom",
+  "version": "1.0.0",
+  "description": "[Ссылка на работающую версию проекта](https://Vitenberg.github.io/diplom/)\r - **Описание**:  многостраничный сайт, который выполняет поиск ключевых слов по новостям.\r - **Для чего этот проект**:  Дипломная работа \r - **Как развернуть проект**: \r 1. Выполнить клонирование проекта. \r 2. Затем инсталировать утилиты командой npm install. \r 3. Запустить npm run dev для запуска на локальном сервере\r 4. Запустить npm run build для продуктивной сборки проекта",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitenberg/diplom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vitenberg/diplom/issues"
+  },
+  "homepage": "https://github.com/Vitenberg/diplom#readme"
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Диплом Витенберг</title>
+  <!--<link rel="stylesheet" href="./index.css">-->
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+  <link rel="shortcut icon" type="image/png" href="<%= require('../../images/flav.png').default%>" />
+</head>
+
+<body>
+  <div class="root">
+    <header class="header simple-background">
+      <div class="header__line">
+        <a class="header__name header__name_theme_other cursor-link" href="./index.html" target="_self">NewsAnalyzer</a>
+        <ul class="header__links">
+          <li class="header__link-item"><a class="header__link-text header__link-text_theme_other_unchecked"
+              href="./index.html" target="_self">Главная</a></li>
+          <li class="header__link-item"><a class="header__link-text header__link-text_theme_other_checked" href=""
+              target="_self">О
+              проекте</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__link-line header__link-line_black"></div>
+    </header>
+
+    <main class="content">
+      <section class="clients">
+        <h2 class="clients__title">Клиентам</h2>
+        <ul class="clients__para">
+          <li class="clients__text">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему
+            научился студент, какими технологиями владеет.</li>
+          <li class="clients__text">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+            Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по
+            другим методологиям. Также сайт проще и дешевле поддерживать.</li>
+          <li class="clients__text">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт
+            продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</li>
+          <li class="clients__text">При создании проекта была использована сборка технологией Webpack. Это современный
+            подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в
+            старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с
+            отображением. А значит, потенциальная аудитория возрастает.</li>
+          <li class="clients__text">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы
+            рекомендуем обратиться к этому студенту.</li>
+        </ul>
+      </section>
+
+      <section class="technics">
+        <p class="technics__title">Используемые технологии</p>
+        <div class="technics__tech-list">
+          <div class="technics__tech">
+            <p class="technics__name">HTML</p>
+            <img class="technics__icon" src="<%= require('../../images/html5.png').default%>" alt="HTML icon">
+          </div>
+          <div class="technics__tech">
+            <p class="technics__name">CSS</p>
+            <img class="technics__icon" src="<%= require('../../images/CSS3.png').default%>" alt="CSS icon">
+          </div>
+          <div class="technics__tech">
+            <p class="technics__name">Java Script</p>
+            <img class="technics__icon" src="<%= require('../../images/js.png').default%>" alt="JS icon">
+          </div>
+          <div class="technics__tech">
+            <p class="technics__name">Webpack</p>
+            <img class="technics__icon" src="<%= require('../../images/Webpack.png').default%>" alt="Webpack icon">
+          </div>
+        </div>
+      </section>
+
+      <section class="author">
+        <img class="author__image" src="<%= require('../../images/author.png').default%>" alt="Фото автора">
+
+        <div class="author__description">
+          <p class="author__title">Об авторе</p>
+          <p class="author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+            занимаетесь, какими технологиями разработки владеете.
+            Также можно рассказать о процессе обучения в
+            Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам. Если хотите, оставьте свои
+            контакты: email и телефон. Так заказчики смогут с вами связаться.</p>
+        </div>
+      </section>
+
+      <section class="github">
+        <!--<p class="github__title">История коммитов из GitHub</p>-->
+        <div class="title-block title-block_set_pudding">
+          <h4 class="title-block__title">История коммитов из GitHub</h4>
+          <a class="title-block__link cursor-link" href="https://github.com/Vitenberg/diplom" target="_blank">Открыть в
+            Github ></a>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <a class="commit" href="https://github.com/" target="_blank">
+                <p class="commit__date">14 августа, 2019</p>
+                <div class="commit__user-info">
+                  <img class="commit__user-photo" src="<%= require('../../images/user1.jpg').default%>"
+                    alt="фото программиста">
+                  <div class="commit__user-data">
+                    <p class="commit__user-fio">Антон Долинин1</p>
+                    <p class="commit__user-mail">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="commit__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly
+                  improve your HTML & CSS workflow.</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="commit" href="https://github.com/" target="_blank">
+                <p class="commit__date">14 августа, 2019</p>
+                <div class="commit__user-info">
+                  <img class="commit__user-photo" src="<%= require('../../images/user1.jpg').default%>"
+                    alt="фото программиста">
+                  <div class="commit__user-data">
+                    <p class="commit__user-fio">Антон Долинин2</p>
+                    <p class="commit__user-mail">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="commit__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly
+                  improve your HTML & CSS workflow.</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="commit" href="https://github.com/" target="_blank">
+                <p class="commit__date">14 августа, 2019</p>
+                <div class="commit__user-info">
+                  <img class="commit__user-photo" src="<%= require('../../images/user1.jpg').default%>"
+                    alt="фото программиста">
+                  <div class="commit__user-data">
+                    <p class="commit__user-fio">Антон Долинин3</p>
+                    <p class="commit__user-mail">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="commit__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly
+                  improve your HTML & CSS workflow.</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="commit" href="https://github.com/" target="_blank">
+                <p class="commit__date">14 августа, 2019</p>
+                <div class="commit__user-info">
+                  <img class="commit__user-photo" src="<%= require('../../images/user1.jpg').default%>"
+                    alt="фото программиста">
+                  <div class="commit__user-data">
+                    <p class="commit__user-fio">Антон Долинин4</p>
+                    <p class="commit__user-mail">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="commit__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly
+                  improve your HTML & CSS workflow.</p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="commit" href="https://github.com/" target="_blank">
+                <p class="commit__date">14 августа, 2019</p>
+                <div class="commit__user-info">
+                  <img class="commit__user-photo" src="<%= require('../../images/user1.jpg').default%>"
+                    alt="фото программиста">
+                  <div class="commit__user-data">
+                    <p class="commit__user-fio">Антон Долинин5</p>
+                    <p class="commit__user-mail">anton@yandex.ru</p>
+                  </div>
+                </div>
+                <p class="commit__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly
+                  improve your HTML & CSS workflow.</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2019 Vitenberg</p>
+      <ul class="footer__links">
+        <li class="footer__links-item"><a class="footer__link cursor-link" href="./index.html">Главная</a>
+        </li>
+        <li class="footer__links-item"><a class="footer__link cursor-link" href="./about.html">О
+            проекте</a>
+        </li>
+        <li class="footer__links-item"><a class="footer__link cursor-link" href="https://praktikum.yandex.ru/"
+            target="_blank">Яндекс.Практикум</a></li>
+      </ul>
+      <ul class="footer__links">
+        <li class="footer__links-item pic">
+          <a class="footer__link cursor-link" href="https://github.com/" target="_blank">
+            <img class="footer__icon" src="<%= require('../../images/github.svg').default%>">
+          </a>
+        </li>
+        <li class="footer__links-item pic">
+          <a class="footer__link cursor-link" href="https://facebook.com/" target="_blank">
+            <img class="footer__icon" src="<%= require('../../images/facebook.svg').default%>">
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <!--<script src="script.js"> </script>-->
+  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

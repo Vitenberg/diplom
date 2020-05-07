@@ -1,0 +1,81 @@
+
+
+.commit{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 24px 24px 0px;
+
+    /*background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
+    background-color: #F5F6F7;*/
+}
+.commit:hover{
+    cursor: url(../../images/hand.png), pointer; 
+}
+.commit__date{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+
+    color: #B6BCBF;
+}
+.commit__user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+}
+.commit__user-photo{
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    border-radius: 1000px;
+}
+.commit__user-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    text-align: left;
+    margin-left: 16px;
+    
+}
+.commit__user-fio{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+
+    color: #1A1B22;
+    margin: 0;
+}
+.commit__user-mail{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #1A1B22;
+    margin: 2px 0 0;
+}
+.commit__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #1A1B22;
+    margin: 0px;
+    padding-top: 16px;
+}

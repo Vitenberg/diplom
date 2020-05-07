@@ -1,0 +1,122 @@
+.author{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 80px 104px;
+}
+.author__image{
+    background-size: cover;
+    width: calc((100%-56px)*464/1220);   
+    
+}
+.author__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: calc((100%-56px)*600/1220);
+
+    padding: 51px 0px 0px 56px;
+}
+.author__title{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #1A1B22;
+
+    text-align: left;
+    margin: 0px;
+}
+.author__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1A1B22;
+
+    text-align: left;
+    margin: 0px;
+    padding-top: 24px;
+}
+@media screen and (max-width: 1280px) {
+    .author__description{
+        padding-top: 21px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .author__description{
+        width: calc((100%-32px)*424/688); 
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .author{
+       padding: 40px; 
+    }
+    .author__description{
+        width: calc((100%-32px)*424/688); 
+        padding: 0px 0px 0px 32px;
+    }
+    .author__image{
+        background-size: cover;
+        width: calc((100%-32px)*232/688);  
+        padding-top: 21px; 
+    }
+    .author__title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .author{
+        padding: 32px 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .author__image{
+        width: 100%;
+        object-fit: contain;
+        padding: 0px;
+        max-width: 288px;
+    }
+    .author__description{
+        width: 100%;
+        padding: 0px;
+    }
+    .author__text{
+        padding-top: 16px;
+    }
+    .author__text:last-of-type{
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .author{
+        flex-direction: column;
+        padding: 32px 16px;
+    }
+    .author__image{
+        width: 100%;
+        object-fit: contain;
+        padding: 0px;
+    }
+    .author__description{
+        width: 100%;
+        padding: 0px;
+    }
+    .author__text{
+        padding-top: 16px;
+    }
+    .author__text:last-of-type{
+        padding-top: 0px;
+    }
+}

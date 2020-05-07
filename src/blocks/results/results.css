@@ -1,0 +1,84 @@
+
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F5F6F7;
+
+    padding: 80px 104px;
+}
+
+.results__link{
+    cursor: url(../../images/hand.png), pointer; 
+}
+.results__button{
+    width: calc(100%*288/1232);
+    height: 64px;
+    border-radius: 80px;
+    background: #FFFFFF;
+    border: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    text-align: center;
+
+    margin-top: 64px;
+}
+.results__button:hover{
+    cursor: url(../../images/hand.png), pointer; 
+    opacity: 0.8;
+}
+.results__button:active{
+    outline: none;
+}
+.results__button:focus{
+    outline: none;
+}
+@media screen and (max-width: 900px) {
+    .results{
+        padding: 40px 80px 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .results{
+        padding: 40px;
+    }
+    .results__button{
+        width: calc(100%*240/688);
+        margin-top: 22px;
+    }
+}
+@media screen and (max-width: 705px) {
+    .results{
+        padding: 32px 16px 32px;
+    }
+    .results__button{
+        width: 50%;
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .results{
+        padding: 32px 16px 32px;
+    }
+    .results__title-block{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .results__title{
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .results__link{
+        margin-top: 16px;
+    }
+    .results__button{
+        width: 100%;
+        margin-top: 8px;
+    }
+}

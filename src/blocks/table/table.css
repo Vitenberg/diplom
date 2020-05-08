@@ -1,0 +1,96 @@
+.table{
+    padding: 80px 104px 80px;
+    background: #F5F6F7;
+}
+.table__head{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-top: 48px;
+    padding-bottom: 24px;
+
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.2);
+}
+.table__title{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+
+    margin: 0px;
+}
+.table__head-date,
+.table__head-num{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: #B6BCBF;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    margin: 0px;
+}
+.table__head-date{
+    width: 104px;
+}
+.table__body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-top: 16px;
+}
+.table__cuts{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 16px;
+
+    padding-left: 104px;
+    width: calc(100%-104px);
+}
+.table__cuts:last-of-type{
+    padding-bottom: 0px;
+}
+.table__cut,
+.table__cuts{
+    text-align: right;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+}
+.table__cut{
+    width: calc((100%-104px)/4);
+    margin: 0px;
+}
+@media screen and (max-width: 768px) {
+    .table{
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .table{
+        padding: 0px;
+    }
+    .table__cuts{
+        width: calc(100%-90px);
+        padding-left: 90px;
+    }
+    .table__cut{
+        width: calc((100%-90px)/4);
+    }
+}

@@ -1,0 +1,75 @@
+.total{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 40px 104px 80px;
+    background-color: white;
+}
+.total__text,
+.total__title,
+.total__num{
+    margin: 0px;
+}
+
+.total__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+}
+.total__text-span{
+    color: #1A1B22;
+}
+.total__title{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+
+    padding-top: 80px;
+
+    color: #1A1B22;
+}
+.total__num{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 24px;
+    
+    color: #1A1B22;
+}
+.total__num-span{
+    font-weight: normal;
+}
+.total__num-text{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .total{
+        padding: 32px 40px 40px;
+    }
+    .total__title{
+        font-size: 32px;
+        line-height: 34px;
+        padding-top: 64px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .total{
+        padding: 16px 16px 24px;
+    }
+    .total__title{
+        font-size: 30px;
+        line-height: 32px;
+    }
+}

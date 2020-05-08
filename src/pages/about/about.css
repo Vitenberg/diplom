@@ -1,0 +1,15 @@
+@import url('../../vendor/normalize.css');
+@import url('../../fonts/inter.css');
+@import url('../../blocks/header/header.css');
+@import url('../../blocks/content/content.css');
+@import url('../../blocks/footer/footer.css');
+
+@import url('../../blocks/author/author.css');
+@import url('../../blocks/github/github.css');
+@import url('../../blocks/title-block/title-block.css');
+@import url('../../../node_modules/swiper/css/swiper.min.css');
+@import url('../../blocks/swiper/swiper.css');
+@import url('../../blocks/commit/commit.css');
+
+@import url('../../blocks/clients/clients.css');
+@import url('../../blocks/technics/technics.css');

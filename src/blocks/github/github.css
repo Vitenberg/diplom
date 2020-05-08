@@ -1,0 +1,17 @@
+.github{
+    margin: 0;
+    background: #F5F6F7;  
+    padding: 71px 0px 71px;  
+}
+.github__title{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #1A1B22;  
+    
+    margin: 0px;
+    padding-left: 104px;
+}

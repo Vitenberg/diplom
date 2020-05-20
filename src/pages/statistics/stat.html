@@ -30,7 +30,7 @@
         <p class="total__text"><span class="total__text-span">Главная /</span> Аналитика</p>
         <p class="total__title">Вы спросили: «Путешествия»</p>
         <p class="total__num"><span class="total__num-span">Новостей за неделю:</span> 34 324 </p>
-        <p class="total__num"><span class="total__num-span">Упоминаний в загаловках:</span> 235</p>
+        <p class="total__num total__num_remarks"><span class="total__num-span">Упоминаний в загаловках:</span> 235</p>
       </section>
       <section class="table">
         <p class="table__title">Аналитика по дням</p>
@@ -45,11 +45,8 @@
             <p class="table__cut">75</p>
             <p class="table__cut">100</p>
           </div>
-          <div class="cell">
-            <p class="cell__date">19, пн</p>
-            <p class="cell__value">15</p>
-            <div class="cell__line cell__line_width_15"></div>
-          </div>
+        <div class="table__cells">
+         <!--
           <div class="cell">
             <p class="cell__date">20, вт</p>
             <p class="cell__value">18</p>
@@ -79,6 +76,8 @@
             <p class="cell__date">25, вс</p>
             <p class="cell__value">34</p>
             <div class="cell__line cell__line_width_34"></div>
+          </div>
+          -->
           </div>
           <div class="table__cuts">0
             <p class="table__cut">25</p>
@@ -116,3 +115,10 @@
   <script src="<%= htmlWebpackPlugin.files.chunks.stat.entry %>"></script>
 </body>
 </html>
+<template data-component="cell">
+  <div class="cell">
+    <p class="cell__date">19, пн</p>
+    <p class="cell__value">15</p>
+    <div class="cell__line"></div>
+  </div>
+</template>

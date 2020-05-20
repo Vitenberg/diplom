@@ -43,6 +43,7 @@
 .cell__line{
     height: 24px;
     background: #2F71E5;
+    /*width: 50px;*/
 }
 .cell__line_width_15{
     width: calc((100%-104px)*15/100);

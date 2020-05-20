@@ -1,7 +1,7 @@
 import {ERROR_THROUTH_REQUEST} from '../constants/const';
 export class NewsApi {
     constructor(conf) {
-        this.link = 'http://newsapi.org/v2/everything?';
+        this.link = 'https://newsapi.org/v2/everything?';
         this.apiKey = '8a209ae81d4a4d0d8134b2a7d5004208';
         //this.apiKey = '8a209ae81d4a4d0d8134b2a7d500420811';
     }

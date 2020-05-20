@@ -9,7 +9,7 @@
     CONTENT="Данный сайт демонстрирует чему я научилась на курсе фронтенд разработки Яндекс.Практикум">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Диплом Витенберг Ольга</title>
-  <link rel="stylesheet" href="css/index.107b67a7441cc8598ab1.css">
+  <link rel="stylesheet" href="css/index.28c2141a18c2859dd672.css">
   <link rel="shortcut icon" type="image/png" href="./images/flav.png" />
 </head>
 
@@ -31,85 +31,32 @@
         <h1 class="search__title">творится?</h1>
         <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю.</p>
-        <form class="search__form" name="search">
+        <form class="search__form" name="search" novalidate>
           <input class="search__input" type="text" name="input" placeholder="Введите тему новости" minlength="2"
             required>
+          <div class="error error_hidden">Введите текст для поиска</div>
           <button class="search__button">Показать ещё</button>
         </form>
       </div>
     </header>
 
     <main class="content">
-      <section class="preload">
+      <section class="preload preload_visibility_hidden">
         <i class="circle-preloader"></i>
         <p class="preload__text">Идёт поиск новостей</p>
       </section>
-      <section class="nodata">
+      <section class="nodata nodata_visibility_hidden">
         <img class="nodata__image" src="./images/nodata.png" alt="Фото первой новости">
         <p class="nodata__title">Ничего не найдено</p>
         <p class="nodata__subtitle">К сожалению по вашему запросу ничего не найдено.</p>
       </section>
 
-      <section class="results">
+      <section class="results results_visibility_hidden">
         <div class="title-block">
           <h4 class="title-block__title">Результаты поиска</h4>
           <a class="title-block__link cursor-link" href="./stat.html" target="_self">Посмотреть аналитику ></a>
         </div>
         <div class="cards">
-          <div class="card">
-            <img class="card__image" src="./images/img_card_1.jpg"
-              alt="Фото первой новости">
-            <div class="card__content">
-              <div class="card__content-part">
-                <p class="card__date">2 августа, 2019</p>
-                <p class="card__title">Национальное достояние – парки</p>
-                <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                  складываться система
-                  национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-              </div>
-              <p class="card__link">Лента.ру</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/img_card_2.jpg"
-              alt="Фото первой новости">
-            <div class="card__content">
-              <div class="card__content-part">
-                <p class="card__date">2 августа, 2019</p>
-                <p class="card__title">Лесные огоньки: история одной фотографии</p>
-                <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-                  запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-              </div>
-              <p class="card__link">Медуза</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/img_card_3.jpg"
-              alt="Фото первой новости">
-            <div class="card__content">
-              <div class="card__content-part">
-                <p class="card__date">2 августа, 2019</p>
-                <p class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</p>
-                <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-                  необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-              </div>
-              <p class="card__link">Риа</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" src="./images/img_card_4.jpg" alt="Фото новости">
-            <div class="card__content">
-              <div class="card__content-part">
-                <p class="card__date">2 августа, 2019</p>
-                <p class="card__title">Национальное достояние – парки</p>
-                <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                  складываться
-                  система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.
-                </p>
-              </div>
-              <p class="card__link">Дзен</p>
-            </div>
-          </div>
         </div>
         <button class="results__button">Показать ещё</button>
       </section>
@@ -138,12 +85,12 @@
       <ul class="footer__links">
         <li class="footer__links-item pic">
           <a class="footer__link cursor-link" href="https://github.com/" target="_blank">
-            <img class="footer__icon" src="./images/github.svg">
+            <img class="footer__icon" src="./images/github.svg"  alt="пиктограмма-ссылка на github">
           </a>
         </li>
         <li class="footer__links-item pic">
           <a class="footer__link cursor-link" href="https://facebook.com/" target="_blank">
-            <img class="footer__icon" src="./images/facebook.svg">
+            <img class="footer__icon" src="./images/facebook.svg" alt="пиктограмма-ссылка на facebook">
           </a>
         </li>
       </ul>
@@ -151,7 +98,24 @@
   </div>
 
   <!--<script src="script.js"> </script>-->
-  <script src="js/index.f2ea496db3614e7f0f64.js"></script>
+  <script src="js/index.5530dbc0468da6ffd333.js"></script>
 </body>
+
+<template data-component="news-card">
+    <a class="card" href="" target="_blank">
+      <img class="card__image" src="./images/img_card_1.jpg"
+        alt="Фото для новости">
+      <div class="card__content">
+        <div class="card__content-part">
+          <p class="card__date">2 августа, 2019</p>
+          <p class="card__title">Национальное достояние – парки</p>
+          <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+            складываться система
+            национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+        </div>
+        <p class="card__link">Лента.ру</p>
+      </div>
+    </a>
+  </template>
 
 </html>

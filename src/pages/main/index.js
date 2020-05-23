@@ -28,12 +28,14 @@ const newsCards = new NewsCardList(newsResultElem,
     dataStorage,
     api, 
     newsAddCardsButton,
-    createNewsCard);
+    createNewsCard,
+    document.forms.search);
 const searchInput = new SearchInput(document.forms.search,
                                         errorMessageElem,
                                         newsAddCardsButton,
                                         newsCards.render.bind(newsCards),
                                         newsCards.showThreeCards.bind(newsCards),
                                         newsCards.showCardsFromLocalStore.bind(newsCards),
+                                        dataStorage,
                                     );
 searchInput.addEventListener();

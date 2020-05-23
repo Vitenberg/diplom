@@ -10,9 +10,9 @@ export class CommitCardList {
     }
     render(swiper) {
         this.api.getGitHubCards()
-            .then((result) => {
-                for (const elem of result) {
-                    let card = this.createCard(elem.commit.committer.name,
+            .then((cards) => {
+                for (const elem of cards) {
+                    const card = this.createCard(elem.commit.committer.name,
                         elem.commit.committer.email,
                         elem.commit.committer.date,
                         elem.commit.message,

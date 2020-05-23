@@ -1,23 +1,23 @@
 function formateDate(date) {
     const monthArray = ['января,', 'февраля,', 'марта,', 'апреля,', 'мая,', 'июня,', 'июля,', 'августа,', 'сентября,', 'октяюря,', 'ноября,', 'декабря,']
-    let d = new Date(date);
+    const d = new Date(date);
     return (d.getDate() + ' ' + monthArray[d.getMonth()] + ' ' + d.getFullYear());
 }
 function formateDateDayOfWeek(date) {
     const days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
-    let d = new Date(date);
+    const d = new Date(date);
     return (d.getDate() + ', ' + days[d.getDay()]);
 
 }
 function getFormatedWeek(){
-    const week = [];
+    const weekDays = [];
     const days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
     for (let i=0; i < 7; i++){
-        let d = new Date;
+        const d = new Date;
         d.setDate(d.getDate() - i);
-        week.push(d.getDate() + ', ' + days[d.getDay()]);
+        weekDays.push(d.getDate() + ', ' + days[d.getDay()]);
     }
-    return week;  
+    return weekDays;  
 }
 function numOfSameDate(dateArray) {
     const result = dateArray.reduce(function (prevVal, item) {

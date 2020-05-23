@@ -1,9 +1,9 @@
-import {ERROR_THROUTH_REQUEST} from '../constants/const';
+import {PERIOD_FOR_NEWS_SEARCH} from '../constants/const';
 export class NewsApi {
     constructor(conf) {
-        this.link = 'https://newsapi.org/v2/everything?';
+       // this.link = 'https://newsapi.org/v2/everything?';
+        this.link = ' https://praktikum.tk/news/v2/everything?';
         this.apiKey = '8a209ae81d4a4d0d8134b2a7d5004208';
-        //this.apiKey = '8a209ae81d4a4d0d8134b2a7d500420811';
     }
     constructUrl(searchText){
         const url = this.link +
@@ -16,18 +16,18 @@ export class NewsApi {
         return url;
     };
     getCurrentDate(){
-        let today = new Date;
-        let month = today.getMonth() + 1;
+        const today = new Date;
+        const month = today.getMonth() + 1;
         return (today.getFullYear() + '-' + month +'-'+ today.getDate());
     }
     getFromDate(){
-        let today = new Date;
-        today.setDate(today.getDate() - 6);
-        let month = today.getMonth() + 1;
+        const today = new Date;
+        today.setDate(today.getDate() - PERIOD_FOR_NEWS_SEARCH + 1);
+        const month = today.getMonth() + 1;
         return (today.getFullYear() + '-' + month +'-'+ today.getDate());
     }
-    getNewsCards(sText) {
-        return fetch(this.constructUrl(sText), {
+    getNewsCards(searchText) {
+        return fetch(this.constructUrl(searchText), {
             headers: {
             }
         })
@@ -37,9 +37,6 @@ export class NewsApi {
                 }  
                 return Promise.reject(`Что-то пошло не так: ${res.status}`);
             })
-            .catch((err) => {
-                console.log(ERROR_THROUTH_REQUEST, err);
-            })
-            ;
+
     }
 }

@@ -1,32 +1,36 @@
 export class SearchInput {
-    constructor( form, errElem, addButton, searchFunc, threeNews, showLocal){
+    constructor( form, errElem, addButton, searchFunc, threeNews, showLocal, dataStorage){
         this.form = form;
         this.addButton = addButton;
         this.searchFunc = searchFunc;
         this.threeNews = threeNews;
         this.showLocal = showLocal;
         this.errElem = errElem;
+        this.dataStorage = dataStorage;
     }
-    startSearch(){
+    _startSearch(){
         event.preventDefault();
-        if (this.validate()){       
-            this.searchFunc(this.form.input.value);
+        if (this._validate()){ 
+            this.form.input.setAttribute("disabled", "");      
+            this.searchFunc(this.form.input.value);        
         }
     }
-    addThreeNews(){
+    _addThreeNews(){
         event.preventDefault();
         this.threeNews();
     }
-    showFromLocal(){
+    _showFromLocal(){
+        const searchWord = this.dataStorage.getTextDatafromStorage('searchWord');
+        this.form.input.value = searchWord;
         this.showLocal();
     }
     addEventListener(){
-        this.form.addEventListener('submit', this.startSearch.bind(this));
-        this.addButton.addEventListener('click', this.addThreeNews.bind(this));
-        window.addEventListener('load', this.showFromLocal.bind(this));
-        this.form.addEventListener('input', this.validate.bind(this));
+        this.form.addEventListener('submit', this._startSearch.bind(this));
+        this.addButton.addEventListener('click', this._addThreeNews.bind(this));
+        window.addEventListener('load', this._showFromLocal.bind(this));
+        this.form.addEventListener('input', this._validate.bind(this));
     }
-    validate(){
+    _validate(){
         let validity = false;
         if (this.form.input.validity.valueMissing && (event.type == 'submit')){
             this.errElem.classList.remove('error_hidden');

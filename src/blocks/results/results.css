@@ -8,7 +8,9 @@
 
     padding: 80px 104px;
 }
-
+.results_visibility_hidden{
+    display: none;
+}
 .results__link{
     cursor: url(../../images/hand.png), pointer; 
 }
@@ -28,6 +30,9 @@
     text-align: center;
 
     margin-top: 64px;
+}
+.results__button_visibility_hidden{
+    display: none;
 }
 .results__button:hover{
     cursor: url(../../images/hand.png), pointer; 

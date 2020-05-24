@@ -3,11 +3,9 @@
     height: 346px;    
     margin-top: 64px;
 }
-.swiper-slide{
-    
+.swiper-slide{  
     max-height: 288px;   
     border-radius: 16px;
-
     background: #FFFFFF;
 }
 .swiper-slide:after {

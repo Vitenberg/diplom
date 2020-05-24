@@ -7,6 +7,8 @@
     justify-content: flex-start;
 
     padding: 80px;
+}
+.preload_visibility_hidden{
     display: none;
 }
 .circle-preloader {
